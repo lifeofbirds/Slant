@@ -204,7 +204,7 @@
 #X obj 378 335 r \$0_tlen;
 #X obj 384 362 r \$0-speed;
 #X obj 369 389 * 1;
-#X msg 296 55 2;
+#X msg 296 55 500;
 #X connect 2 0 61 0;
 #X connect 3 0 0 0;
 #X connect 5 0 0 0;
