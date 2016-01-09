@@ -87,7 +87,7 @@
 #X obj 1124 -74 inlet tablename;
 #X obj 98 -12 loadbang;
 #X text 1222 -72 needs a set msg;
-#X msg 1239 27 LIGHT_B;
+#X msg 1239 27 LIGHT_A;
 #X text 515 109 PAN;
 #X text 778 106 RELEASE;
 #X obj 109 199 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
