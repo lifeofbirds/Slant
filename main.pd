@@ -6,7 +6,7 @@
 -1;
 #X obj 499 65 output_stage;
 #X obj 20 102 s headphones;
-#X obj 20 79 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 20 79 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X obj 776 114 s loaded;
 #X obj 294 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -26,13 +26,16 @@
 #X msg 621 216 set \$1;
 #X obj 363 217 delay 5000;
 #X obj 483 256 delay 10000;
-#X floatatom 363 351 5 0 0 0 - - -, f 5;
-#X floatatom 238 327 5 0 0 0 - - -, f 5;
+#X floatatom 363 351 5 0 0 0 - - -;
+#X floatatom 238 327 5 0 0 0 - - -;
 #X text 92 329 place in sequence --->;
 #X text 743 284 timebase multiplier between steps;
-#X floatatom 483 369 5 0 0 0 - - -, f 5;
-#X floatatom 319 415 5 0 0 0 - - -, f 5;
+#X floatatom 483 369 5 0 0 0 - - -;
+#X floatatom 319 415 5 0 0 0 - - -;
 #X text 206 416 full time elapsed;
+#X obj 909 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 909 116 s stop;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;
@@ -57,3 +60,4 @@
 #X connect 19 0 17 0;
 #X connect 20 0 14 0;
 #X connect 21 0 15 0;
+#X connect 29 0 30 0;
