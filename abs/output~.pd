@@ -17,7 +17,7 @@
 #X text -69 350 automatically start DSP -->;
 #X obj 114 -19 hip~ 3;
 #X obj 119 252 nbx 3 14 -99 0 0 0 empty empty dB -15 8 0 10 -257985
--1 -1 0 256;
+-1 -1 -32.7402 256;
 #X obj -40 438 outlet~;
 #X obj -9 397 *~ 1;
 #X obj 17 439 dac~ \$1;
@@ -106,4 +106,4 @@
 #X connect 49 0 34 0;
 #X connect 53 0 17 0;
 #X connect 54 0 47 0;
-#X coords 0 -1 1 1 58 185 1 100 100;
+#X coords 0 -1 1 1 58 185 2 100 100;
