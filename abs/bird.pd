@@ -7,7 +7,7 @@
 #X obj 1191 106 elooper~;
 #X obj 402 698 moog~;
 #X obj 403 671 *~ 1;
-#X obj 169 139 envgen 200 140 1 0;
+#X obj 169 139 envgen 200 140 1 0  ;
 #X obj -16 315 list prepend set;
 #X obj -16 336 list trim;
 #X msg 109 341 0 493.64 0.128571 555.345 0.364286 502.456 0.735714
@@ -23,7 +23,7 @@
 #X obj 44 -58 s \$0-trig;
 #X obj 43 -32 r \$0-trig;
 #X obj 43 -9 t b b;
-#X obj 436 140 envgen 200 140 1 0;
+#X obj 436 140 envgen 200 140 1 0  ;
 #X obj 527 312 list prepend set;
 #X obj 527 333 list trim;
 #X msg 527 359 0 2723.7 0.485714 2464.3 1;
@@ -32,7 +32,7 @@
 #X obj 519 405 delay \$1;
 #X msg 541 54 duration \$1;
 #X obj 450 -55 t b b;
-#X obj 705 138 envgen 200 140 1 0;
+#X obj 705 138 envgen 200 140 1 0  ;
 #X obj 1040 257 list prepend set;
 #X obj 1040 278 list trim;
 #X msg 790 315 1 224.64 0.557143 542.88 0.128571 1104.48 0;
@@ -50,7 +50,7 @@
 #X obj -7 206 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 433 385 send \$0-pan;
-#X floatatom 455 315 5 0 0 0 - - -, f 5;
+#X floatatom 455 315 5 0 0 0 - - -;
 #X obj 496 16 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 170 448 line;
@@ -201,6 +201,7 @@
 #X connect 74 0 0 0;
 #X connect 75 0 102 0;
 #X connect 76 0 1 0;
+#X connect 76 0 79 0;
 #X connect 79 0 5 2;
 #X connect 82 0 16 0;
 #X connect 82 0 15 1;
