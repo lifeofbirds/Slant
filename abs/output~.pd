@@ -17,21 +17,21 @@
 #X text -69 350 automatically start DSP -->;
 #X obj 114 -19 hip~ 3;
 #X obj 119 252 nbx 3 14 -99 0 0 0 empty empty dB -15 8 0 10 -257985
--1 -1 -32.7402 256;
+-1 -1 -19 256;
 #X obj -40 438 outlet~;
 #X obj -9 397 *~ 1;
 #X obj 17 439 dac~ \$1;
 #X obj 99 55 env~ 8192;
 #X obj 140 268 tgl 15 0 empty empty mute -38 7 0 10 -258113 -1 -1 0
 1;
-#X floatatom 285 494 5 0 0 0 - - -, f 5;
+#X floatatom 285 494 5 0 0 0 - - -;
 #X obj 347 432 spigot;
 #X obj 243 386 t b b;
 #X msg 346 407 0;
 #X msg 375 407 1;
 #X obj 206 386 t b b;
 #X obj 206 355 sel 0 1;
-#X floatatom 280 469 5 0 0 0 - - -, f 5;
+#X floatatom 280 469 5 0 0 0 - - -;
 #X obj 347 458 s \$0-master-store;
 #X obj 221 440 r \$0-master-store;
 #X obj 391 314 s \$0-master-out;
@@ -47,10 +47,10 @@
 #X obj 172 -48 receive~;
 #X obj 285 -53 loadbang;
 #X obj 127 447 outlet;
-#X floatatom 290 108 5 0 0 0 - - -, f 5;
+#X floatatom 290 108 5 0 0 0 - - -;
 #X obj 317 157 line;
 #X msg 307 128 set \$1;
-#X floatatom 305 182 5 0 0 0 - - -, f 5;
+#X floatatom 305 182 5 0 0 0 - - -;
 #X text 367 155 |-99 |5000( fades out from current val over 15 secs
 ;
 #X text 225 92 stores current val in line;
@@ -106,4 +106,4 @@
 #X connect 49 0 34 0;
 #X connect 53 0 17 0;
 #X connect 54 0 47 0;
-#X coords 0 -1 1 1 58 185 2 100 100;
+#X coords 0 -1 1 1 58 185 1 100 100;

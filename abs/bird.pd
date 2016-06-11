@@ -1,4 +1,4 @@
-#N canvas 184 25 1474 956 10;
+#N canvas 199 26 1474 956 10;
 #X msg 1260 80 stop;
 #X obj 1191 80 t b b;
 #X msg 1299 104 1;
@@ -26,7 +26,7 @@
 #X obj 436 140 envgen 200 140 1 0  ;
 #X obj 527 312 list prepend set;
 #X obj 527 333 list trim;
-#X msg 527 359 0 2723.7 0.485714 2464.3 1;
+#X msg 527 359 0 3032.93 0.485714 2744.07 1;
 #X msg 539 12 dump;
 #X text 572 11 save/overwrite;
 #X obj 519 405 delay \$1;
@@ -97,11 +97,11 @@
 -262144 -1 -1 1872 256;
 #X text 655 178 dur;
 #X obj 376 194 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 5984 256;
+-262144 -1 -1 5777 256;
 #X text 384 175 dur;
 #X obj 406 47 loadbang;
 #X obj 647 52 loadbang;
-#X msg 406 69 5984;
+#X msg 406 69 5777;
 #X msg 647 74 1872;
 #X obj 107 257 bng 30 250 50 0 empty empty save/overwrite 0 35 0 10
 -258113 -1 -1;
